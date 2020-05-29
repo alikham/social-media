@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import '../widgets/custom_clipper.dart';
+import 'home_screen.dart';
 
 class LoginScreen extends StatefulWidget {
   @override
@@ -59,11 +60,7 @@ class _LoginScreenState extends State<LoginScreen> {
                 ),
               ),
               GestureDetector(
-                onTap: () {
-                  // Navigator.push(
-                  //     context,
-                  // MaterialPageRoute(builder: (_)=>))
-                },
+                onTap: () => Navigator.pushReplacement(context, MaterialPageRoute(builder: (_)=>HomeScreen())),
                 child: Container(
                   height: 45.0,
                   margin: EdgeInsets.symmetric(horizontal: 60.0),

@@ -10,5 +10,6 @@ Alternatively you can email me at akhan2501@gmail.com for the apk file
 
 ## Screens
 
-![screen1](assets/demo/screen1.png) ![screen2](assets/demo/screen2.png) 
+![screen1](assets/demo/screen1.png) ![screen2](assets/demo/screen2.png)
+
 ![screen3](assets/demo/screen3.png) ![screen3](assets/demo/screen4.png)

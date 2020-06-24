@@ -39,10 +39,22 @@ class _LoginScreenState extends State<LoginScreen> {
                 child: TextField(
                   decoration: InputDecoration(
                     contentPadding: EdgeInsets.symmetric(vertical: 15.0),
-                    fillColor: Colors.white,
+                    fillColor: Colors.blueGrey[300],
+                    border: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(12.0),
+                    ),
+                    enabledBorder: OutlineInputBorder(
+                      borderSide: BorderSide(color: Colors.transparent),
+                      borderRadius: BorderRadius.circular(12.0),
+                    ),
                     filled: true,
+                    hintStyle: TextStyle(color: Colors.white),
                     hintText: 'Username',
-                    prefixIcon: Icon(Icons.account_box, size: 30.0),
+                    prefixIcon: Icon(
+                      Icons.account_box,
+                      size: 30.0,
+                      color: Colors.white,
+                    ),
                   ),
                 ),
               ),
@@ -51,16 +63,26 @@ class _LoginScreenState extends State<LoginScreen> {
                 child: TextField(
                   decoration: InputDecoration(
                     contentPadding: EdgeInsets.symmetric(vertical: 15.0),
-                    fillColor: Colors.white,
+                     fillColor: Colors.blueGrey[300],
+                    border: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(12.0),
+                    ),
+                    enabledBorder: OutlineInputBorder(
+                      borderSide: BorderSide(color: Colors.transparent),
+                      borderRadius: BorderRadius.circular(12.0),
+                    ),
                     filled: true,
+                    hintStyle: TextStyle(color: Colors.white),
                     hintText: 'Password',
-                    prefixIcon: Icon(Icons.lock, size: 30.0),
+                    prefixIcon: Icon(Icons.lock, size: 30.0, color: Colors.white,),
                   ),
                   obscureText: true,
                 ),
               ),
+              SizedBox(height: 10,),
               GestureDetector(
-                onTap: () => Navigator.pushReplacement(context, MaterialPageRoute(builder: (_)=>HomeScreen())),
+                onTap: () => Navigator.pushReplacement(
+                    context, MaterialPageRoute(builder: (_) => HomeScreen())),
                 child: Container(
                   height: 45.0,
                   margin: EdgeInsets.symmetric(horizontal: 60.0),
